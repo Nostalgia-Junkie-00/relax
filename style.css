@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(/img/mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*----------------------------------- Header ------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.header .logo .img {
+    height: 60px;
+}
+.header .logo .title {
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline;
+    color: white;
+}
+/*---------------------------------- Navigation ---------------------------------*/
+.header .nav {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+.header .nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+.header .nav a:hover {
+    border-radius: 100px 0 100px 0;
+    padding: 15px;
+    background-color: #34855e;
+    box-shadow: 5px 10px white;
+    transition: all 0.3s ease 0s;
+}
+/*---------------------------------- Main ---------------------------------*/
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.main .bubble {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 50px;
+    border-radius: 20px;
+}
+.main .bubble .text {
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.main .bubble .video iframe {
+    border-radius: 10px;
+}
+/*---------------------------------- Footer -------------------------------*/
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+.footer .footer-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .footer-col .col-name {
+    font-size: 30px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.footer .footer-col .col-items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    gap: 5px;
+}
+.footer .footer-col .col-items a {
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-col .social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 30px;
+}
